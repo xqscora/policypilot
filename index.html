@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LoadPath | Individualized workload simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top"><span class="brand-mark">L</span><span><strong>LoadPath</strong><small>Individualized workload simulator</small></span></a>
+      <div class="top-actions"><span class="status"><i></i> Local simulation</span><button id="exportBtn" class="button ghost" type="button">Export scenario</button></div>
+    </header>
+
+    <main id="top" class="shell">
+      <section class="intro">
+        <p class="kicker">EDUCATION × DYNAMICAL SYSTEMS</p>
+        <h1>Same policy.<br /><em>Different learner.</em></h1>
+        <p class="lede">LoadPath turns the pressure-relief model into an interactive classroom lab. Change the learner profile or the available coping channels, then watch the 14-day trajectory change.</p>
+      </section>
+
+      <section class="sim-grid" aria-label="LoadPath simulation">
+        <article class="panel controls-panel">
+          <div class="panel-head"><div><p class="eyebrow">01 / PROFILE</p><h2>Shape a learner</h2></div><span class="step">A</span></div>
+          <p class="hint">These are continuous tendencies, not personality labels.</p>
+          <div class="sliders">
+            <label><span><b>Depth seeking</b><output id="depthValue">0.82</output></span><input id="depth" type="range" min="0" max="1" step="0.01" value="0.82" /></label>
+            <label><span><b>Novelty seeking</b><output id="noveltyValue">0.32</output></span><input id="novelty" type="range" min="0" max="1" step="0.01" value="0.32" /></label>
+            <label><span><b>Action energy</b><output id="actionValue">0.28</output></span><input id="action" type="range" min="0" max="1" step="0.01" value="0.28" /></label>
+            <label><span><b>Social recharge</b><output id="socialValue">0.36</output></span><input id="social" type="range" min="0" max="1" step="0.01" value="0.36" /></label>
+            <label><span><b>Emotional sensitivity</b><output id="emotionalValue">0.66</output></span><input id="emotional" type="range" min="0" max="1" step="0.01" value="0.66" /></label>
+            <label><span><b>Sensory sensitivity</b><output id="sensoryValue">0.58</output></span><input id="sensory" type="range" min="0" max="1" step="0.01" value="0.58" /></label>
+          </div>
+          <div class="preset-row"><button class="preset active" data-preset="deep" type="button">Deep learner</button><button class="preset" data-preset="action" type="button">Action learner</button><button class="preset" data-preset="mixed" type="button">Mixed profile</button></div>
+          <div class="divider"></div>
+          <div class="panel-head compact"><div><p class="eyebrow">02 / POLICY</p><h2>Available relief channels</h2></div><span class="step">B</span></div>
+          <label class="select-label">Scenario<select id="scenario"><option value="all">All channels available</option><option value="no_gaming">Gaming removed</option><option value="screen_only">Screens only</option><option value="exercise_only">Exercise only</option></select></label>
+          <label class="pressure-label"><span><b>School pressure</b><output id="pressureValue">0.58</output></span><input id="pressure" type="range" min="0.2" max="1" step="0.01" value="0.58" /></label>
+          <button id="runBtn" class="button primary full" type="button">Run 14-day simulation <span>→</span></button>
+        </article>
+
+        <article class="panel results-panel">
+          <div class="panel-head"><div><p class="eyebrow">LIVE OUTPUT</p><h2>Pressure trajectory</h2></div><span id="scenarioTag" class="tag">All channels</span></div>
+          <div class="metrics"><div><span>Mean unresolved load</span><strong id="meanMetric">--</strong></div><div><span>Peak load</span><strong id="peakMetric">--</strong></div><div><span>High-load days</span><strong id="daysMetric">--</strong></div></div>
+          <div class="chart-wrap"><canvas id="chart" width="820" height="330" aria-label="Fourteen day unresolved load chart"></canvas><div class="chart-axis"><span>Day 1</span><span>Day 7</span><span>Day 14</span></div></div>
+          <div class="recommendation"><span class="recommendation-mark">+</span><div><p class="eyebrow">MODEL SUGGESTION</p><strong id="recommendation">Run the model to see the lowest-friction next move.</strong><p id="recommendationWhy">The recommendation is derived from channel capacity and activation energy for this profile.</p></div></div>
+          <div class="comparison"><div class="comparison-head"><div><p class="eyebrow">COUNTERFACTUAL</p><h3>Same policy, another learner</h3></div><span>Profile B</span></div><div id="comparisonBars" class="comparison-bars"></div><p class="comparison-note">The policy did not change. The available relief did.</p></div>
+        </article>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel equation-panel">
+          <div class="panel-head"><div><p class="eyebrow">MODEL RECEIPT</p><h2>What the simulation is doing</h2></div><span class="formula-badge">U(t)</span></div>
+          <div class="equation">dU/dt = P(t) · ψ − ΣR<sub>i</sub>(t) − λU</div>
+          <div class="receipt-grid"><div><strong>P(t)</strong><span>school pressure, higher on weekdays</span></div><div><strong>ψ</strong><span>profile-specific pressure sensitivity</span></div><div><strong>R<sub>i</sub></strong><span>channel relief after activation cost</span></div><div><strong>λU</strong><span>natural decay over time</span></div></div>
+          <p class="footnote">LoadPath is an educational simulation, not a mental-health assessment. Its value is making assumptions inspectable before someone turns them into a policy.</p>
+        </article>
+        <article class="panel evidence-panel">
+          <div class="panel-head"><div><p class="eyebrow">FROM CORA'S PRM RESEARCH</p><h2>Why one-size-fits-all fails</h2></div><span class="evidence-tag">2,000 agents</span></div>
+          <img src="assets/prm-scenario-heatmap.png" alt="Pressure-Relief Model scenario heatmap" />
+          <p>The underlying PRM simulation varies 13 continuous dimensions across 11 restriction scenarios. LoadPath makes the same mechanism teachable at classroom scale: a policy is a hypothesis to test, not a universal answer.</p>
+        </article>
+      </section>
+
+      <section class="market-band"><div><p class="eyebrow">WHO IT IS FOR</p><h2>Learning-support teams need a policy lab, not another label.</h2></div><p>Schools can use LoadPath to compare accommodation ideas before applying them to a real student: what happens if a relief channel disappears, what alternative is actually reachable, and which assumptions need evidence?</p></section>
+      <footer class="footer"><span>LoadPath · a research-backed educational simulator</span><span>Local only · no accounts · no student data</span></footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
