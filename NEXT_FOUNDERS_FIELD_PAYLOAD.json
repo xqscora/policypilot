@@ -16,9 +16,9 @@
   "video_title": "PolicyPilot | Test a school policy before it reaches a learner",
   "video_description_file": "NEXT_FOUNDERS_VIDEO_UPLOAD_CARD.md",
   "video_visibility_target": "unlisted",
-  "video_url": null,
-  "video_status": "local video generated and verified; YouTube upload is not performed",
+  "video_url": "https://youtu.be/7QNvmtH8pEs",
+  "video_status": "uploaded to Cora's YouTube as unlisted; paste into Devpost after project creation",
   "ai_use_disclosure": "AI coding assistance was used for implementation drafting and debugging. The project owner reviewed the code, model assumptions, claims, and limitations and remains responsible for the submission.",
   "business_model_file": "NEXT_FOUNDERS_SUBMISSION.md",
-  "external_status": "Registered solo. Local founder pack and five-minute video are ready. No Devpost project draft, upload, or submission is confirmed."
+  "external_status": "Registered solo. Public repo, live demo, and unlisted YouTube walkthrough are ready. Devpost project creation is blocked by the manual CAPTCHA; no draft or final submission is confirmed."
 }

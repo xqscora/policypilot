@@ -13,8 +13,9 @@
 ## Ready materials
 
 - **Project:** PolicyPilot
-- **Source:** https://github.com/xqscora/policypilot (create after the local smoke check and public deployment)
-- **Demo:** https://xqscora.github.io/policypilot/?demo=1 (pending public deployment)
+- **Source:** https://github.com/xqscora/policypilot
+- **Demo:** https://xqscora.github.io/policypilot/?demo=1
+- **Unlisted walkthrough:** https://youtu.be/7QNvmtH8pEs
 - **Existing local implementation:** `index.html`, `app.js`, `styles.css`
 - **Local walkthrough:** `demo/next_founders_policypilot_5min.webm` (5:07.68; locally generated with English narration and the required problem/build/demo/scalability sections)
 - **Submission copy and five-minute script:** `NEXT_FOUNDERS_SUBMISSION.md`
@@ -22,5 +23,5 @@
 ## External action boundary
 
 - No Next Founders project draft exists in the authenticated manage page.
-- No project creation, field edit, media upload, or final submission was performed.
-- Before any external edit, verify the live form's current fields. The official rules require a five-minute video covering the problem, build/architecture, live demo, and scalability; the local script covers those points but a five-minute recording still needs to be produced.
+- No project creation, field edit, or final submission was performed. The five-minute walkthrough is uploaded to Cora's YouTube as unlisted.
+- Before any external edit, verify the live form's current fields. The official rules require a five-minute video covering the problem, build/architecture, live demo, and scalability; the uploaded recording covers those points and is ready to paste once the CAPTCHA gate is cleared.

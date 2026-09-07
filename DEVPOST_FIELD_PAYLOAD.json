@@ -7,8 +7,9 @@
   "demo_url": "https://xqscora.github.io/policypilot/?demo=1",
   "local_evidence": ["README.md", "SUBMISSION.md", "QA.md", "demo/policypilot_start.png", "demo/policypilot_gaming_removed.png", "demo/policypilot_counterfactual.png"],
   "video_local_path": "demo/next_founders_policypilot_5min.webm",
-  "video_note": "Five-minute PolicyPilot-specific walkthrough generated locally; upload remains pending.",
+  "video_url": "https://youtu.be/7QNvmtH8pEs",
+  "video_note": "Five-minute PolicyPilot-specific walkthrough uploaded to Cora's YouTube as unlisted; paste this URL into Devpost when the draft is created.",
   "business_model": "Paid school pilot with team workspaces and versioned policy receipts; later annual per-campus licensing.",
   "safety_note": "PolicyPilot is a planning aid using synthetic trajectories, not a mental-health assessment or treatment recommender.",
-  "external_status": "Local Next Founders project package. Devpost project creation, source deployment, media upload, and final submission are pending."
+  "external_status": "PolicyPilot source and demo are public, and the five-minute walkthrough is uploaded unlisted at https://youtu.be/7QNvmtH8pEs. Devpost project creation is still blocked by the manual CAPTCHA; no final submission is claimed."
 }
