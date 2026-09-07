@@ -130,7 +130,7 @@ function renderComparison(primary, alternate) {
 }
 
 function exportScenario() {
-  const payload = { product: "LoadPath", scenario: state.scenario, pressure: state.pressure, learner_profile: state.profile, simulation: state.result?.series || [], external_data: false, generated_at: new Date().toISOString() };
+  const payload = { product: "PolicyPilot", scenario: state.scenario, pressure: state.pressure, learner_profile: state.profile, simulation: state.result?.series || [], external_data: false, generated_at: new Date().toISOString() };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
   const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = "loadpath-scenario.json"; link.click(); URL.revokeObjectURL(link.href);
 }

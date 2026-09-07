@@ -1,8 +1,8 @@
-# LoadPath - Prom Fall Classic submission draft
+# PolicyPilot - Next Founders submission draft
 
 ## Project title
 
-LoadPath: Same Policy, Different Learner
+PolicyPilot: Test the policy before it reaches a learner
 
 ## Tagline
 
@@ -14,19 +14,19 @@ HTML5 Canvas, vanilla JavaScript, CSS3, local JSON export, Pressure-Relief Model
 
 ## Inspiration
 
-Education policies often treat a learner's coping channels as interchangeable. But removing one relief channel can make a different channel inaccessible, especially when pressure is already high. I built LoadPath to make that hidden interaction visible before adults turn a simple rule into a universal policy.
+Education policies often treat a learner's coping channels as interchangeable. But removing one relief channel can make a different channel inaccessible, especially when pressure is already high. I built PolicyPilot to make that hidden interaction visible before adults turn a simple rule into a universal policy.
 
 ## What it does
 
-LoadPath lets a student or learning-support team shape a continuous learner profile, choose an available-channel policy, and run a 14-day pressure trajectory. It compares the custom learner with a second learner under the identical policy. The interface exposes mean load, peak load, high-load days, a reachable next channel, and the equation behind the result.
+PolicyPilot lets a learning-support team shape a continuous synthetic learner profile, choose an available-channel policy, and run a 14-day pressure trajectory. It compares the custom learner with a second learner under the identical policy. The interface exposes mean load, peak load, high-load days, a reachable next channel, and the equation behind the result.
 
 ## How it uses AI/ML ideas
 
-Instead of hiding a recommendation behind a language model, LoadPath uses an inspectable agent-based/dynamical model. Continuous individual differences modify channel capacity and activation cost. Each day updates unresolved load using pressure, relief, and natural decay. The counterfactual makes the model's most important claim testable: the same intervention can have different effects across profiles.
+Instead of hiding a recommendation behind a language model, PolicyPilot uses an inspectable dynamical model. Continuous individual differences modify channel capacity and activation cost. Each day updates unresolved load using pressure, relief, and natural decay. The counterfactual makes the model's most important claim testable: the same intervention can have different effects across profiles.
 
 ## Why it matters
 
-The first audience is learning-support teams and educators who need to compare accommodation ideas without collecting sensitive student data. A pilot could measure whether the lab improves the quality of policy discussions, catches inaccessible “alternatives,” and helps students participate in decisions about their own learning environment.
+The first buyer is a school learning-support director; the first users are coordinators and teachers who need to compare accommodation ideas without collecting sensitive student data. A paid pilot could measure whether the lab improves the quality of policy discussions, catches inaccessible “alternatives,” and helps students participate in decisions about their own learning environment.
 
 ## Limitations
 
@@ -36,7 +36,7 @@ The trajectories are synthetic and not a clinical or predictive model. PRM param
 
 AI coding assistance was used for implementation drafting and debugging. The project owner reviewed the code and remains responsible for understanding the model, assumptions, and limitations.
 
-## Two-minute demo path
+## Demo path
 
 1. Run the default Deep learner / All channels simulation and point to the equation and the teal trajectory.
 2. Switch to `Gaming removed`; show that the policy changes the trajectory and the model recommendation.

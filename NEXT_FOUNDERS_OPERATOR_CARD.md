@@ -1,0 +1,26 @@
+# Next Founders — PolicyPilot operator card
+
+## Live competition gate
+
+- **Competition:** Next Founders Hackathon
+- **Challenge ID:** `31042`
+- **Official page:** https://next-founders.devpost.com/
+- **Manage submissions:** https://devpost.com/submit-to/31042-next-founders-hackathon/manage/submissions
+- **Registration:** authenticated official page says `You're registered for this hackathon.`
+- **Deadline:** 2026-10-16 5:00 AM GMT+8; live page showed 39 days remaining on 2026-09-07
+- **Eligibility:** ages 13–22, students only, solo or teams of 1–5
+
+## Ready materials
+
+- **Project:** PolicyPilot
+- **Source:** https://github.com/xqscora/policypilot (create after the local smoke check and public deployment)
+- **Demo:** https://xqscora.github.io/policypilot/?demo=1 (pending public deployment)
+- **Existing local implementation:** `index.html`, `app.js`, `styles.css`
+- **Existing local walkthrough:** `demo/loadpath_demo_2026-09-06.webm` (7.40 seconds; suitable as a short proof clip, not yet the required five-minute founder video)
+- **Submission copy and five-minute script:** `NEXT_FOUNDERS_SUBMISSION.md`
+
+## External action boundary
+
+- No Next Founders project draft exists in the authenticated manage page.
+- No project creation, field edit, media upload, or final submission was performed.
+- Before any external edit, verify the live form's current fields. The official rules require a five-minute video covering the problem, build/architecture, live demo, and scalability; the local script covers those points but a five-minute recording still needs to be produced.

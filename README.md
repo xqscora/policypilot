@@ -1,21 +1,23 @@
-# LoadPath
+# PolicyPilot
 
-LoadPath is a browser-based educational simulator built from Cora Zeng's Pressure-Relief Model (PRM). It teaches one core idea: the same study or screen policy can produce different outcomes for different learners because pressure sensitivity, relief capacity, and activation cost are not identical.
+PolicyPilot is a browser-local decision-support prototype for school learning-support teams. It uses Cora Zeng's Pressure-Relief Model to compare a proposed policy across synthetic learner profiles before the policy reaches a real student.
 
-## What is new for this competition
+## Product wedge
 
-The source research models 13 continuous individual-difference dimensions and 11 restriction scenarios across 2,000 simulated agents. LoadPath turns that mechanism into a classroom policy lab:
+Schools already spend time discussing accommodations, but the discussion often loses the assumptions: which relief channel is available, what activation cost is realistic, and which learner profile is being imagined. PolicyPilot turns that conversation into a small, inspectable policy test.
 
-- six continuous learner tendencies instead of categorical personality labels
-- a 14-day discrete-time pressure-relief simulation
-- policy scenarios that remove or retain specific relief channels
-- a counterfactual comparison against another learner under the same policy
-- transparent equation, recommendation, and model receipt
-- local JSON export for a study or accommodation discussion
+The first market is international schools and small learning-support teams. A paid pilot would add team workspaces, versioned policy receipts, and exportable meeting records. The core product remains intentionally bounded: it is not a diagnosis, risk score, or treatment recommender.
 
-This is a distinct education product from SignalBridge Classroom. SignalBridge learns a learner's voice-to-support mapping; LoadPath simulates how an environment interacts with a learner profile before a policy is applied.
+## Technical approach
 
-## Run
+- Six continuous learner tendencies instead of categorical personality labels
+- A 14-day discrete-time pressure-relief simulation
+- Counterfactual comparison under the same policy
+- Visible equation, assumptions, and recommendation receipt
+- Browser-local JSON export with `external_data: false`
+- Plain HTML, CSS, and vanilla JavaScript with no API key or server dependency
+
+## Run locally
 
 ```powershell
 python -m http.server 8788
@@ -25,14 +27,4 @@ Open `http://127.0.0.1:8788/`.
 
 ## Responsible boundary
 
-LoadPath is an educational simulation, not a mental-health assessment, risk score, diagnosis, or treatment recommender. The PRM's NSSI variable is not exposed in the classroom UI. The demo uses synthetic trajectories and no student data. Real-world use would require validation, professional review, and participatory design with students.
-
-## Research basis
-
-The model receipt shows:
-
-```text
-dU/dt = P(t) * psi - sum R_i(t) - lambda U
-```
-
-The full research implementation and simulation results live in `paper-PRM/`. This project uses the same conceptual dynamics but keeps the web experience small enough to inspect and test in one sitting.
+All demo trajectories are synthetic. PolicyPilot does not assess mental health, diagnose a learner, or upload student writing. Real-world deployment would require validation, professional review, and participatory design with students and learning-support staff.

@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LoadPath | Individualized workload simulator</title>
+    <title>PolicyPilot | School policy simulator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#top"><span class="brand-mark">L</span><span><strong>LoadPath</strong><small>Individualized workload simulator</small></span></a>
+      <a class="brand" href="#top"><span class="brand-mark">P</span><span><strong>PolicyPilot</strong><small>School policy simulator</small></span></a>
       <div class="top-actions"><span class="status"><i></i> Local simulation</span><button id="exportBtn" class="button ghost" type="button">Export scenario</button></div>
     </header>
 
     <main id="top" class="shell">
       <section class="intro">
-        <p class="kicker">EDUCATION × DYNAMICAL SYSTEMS</p>
-        <h1>Same policy.<br /><em>Different learner.</em></h1>
-        <p class="lede">LoadPath turns the pressure-relief model into an interactive classroom lab. Change the learner profile or the available coping channels, then watch the 14-day trajectory change.</p>
+        <p class="kicker">EDUCATION OPERATIONS × DECISION SUPPORT</p>
+        <h1>Test the policy.<br /><em>Before it reaches a learner.</em></h1>
+        <p class="lede">PolicyPilot turns the Pressure-Relief Model into an inspectable decision-support tool for school learning-support teams. Compare synthetic learner profiles under the same policy before rollout, then export the assumptions for a real team discussion.</p>
       </section>
 
-      <section class="sim-grid" aria-label="LoadPath simulation">
+      <section class="sim-grid" aria-label="PolicyPilot simulation">
         <article class="panel controls-panel">
           <div class="panel-head"><div><p class="eyebrow">01 / PROFILE</p><h2>Shape a learner</h2></div><span class="step">A</span></div>
           <p class="hint">These are continuous tendencies, not personality labels.</p>
@@ -36,7 +36,7 @@
           <div class="panel-head compact"><div><p class="eyebrow">02 / POLICY</p><h2>Available relief channels</h2></div><span class="step">B</span></div>
           <label class="select-label">Scenario<select id="scenario"><option value="all">All channels available</option><option value="no_gaming">Gaming removed</option><option value="screen_only">Screens only</option><option value="exercise_only">Exercise only</option></select></label>
           <label class="pressure-label"><span><b>School pressure</b><output id="pressureValue">0.58</output></span><input id="pressure" type="range" min="0.2" max="1" step="0.01" value="0.58" /></label>
-          <button id="runBtn" class="button primary full" type="button">Run 14-day simulation <span>→</span></button>
+          <button id="runBtn" class="button primary full" type="button">Run 14-day policy test <span>→</span></button>
         </article>
 
         <article class="panel results-panel">
@@ -53,17 +53,17 @@
           <div class="panel-head"><div><p class="eyebrow">MODEL RECEIPT</p><h2>What the simulation is doing</h2></div><span class="formula-badge">U(t)</span></div>
           <div class="equation">dU/dt = P(t) · ψ − ΣR<sub>i</sub>(t) − λU</div>
           <div class="receipt-grid"><div><strong>P(t)</strong><span>school pressure, higher on weekdays</span></div><div><strong>ψ</strong><span>profile-specific pressure sensitivity</span></div><div><strong>R<sub>i</sub></strong><span>channel relief after activation cost</span></div><div><strong>λU</strong><span>natural decay over time</span></div></div>
-          <p class="footnote">LoadPath is an educational simulation, not a mental-health assessment. Its value is making assumptions inspectable before someone turns them into a policy.</p>
+          <p class="footnote">PolicyPilot is a planning aid, not a mental-health assessment or treatment recommender. Its value is making policy assumptions inspectable before a school applies them.</p>
         </article>
         <article class="panel evidence-panel">
           <div class="panel-head"><div><p class="eyebrow">FROM CORA'S PRM RESEARCH</p><h2>Why one-size-fits-all fails</h2></div><span class="evidence-tag">2,000 agents</span></div>
           <img src="assets/prm-scenario-heatmap.png" alt="Pressure-Relief Model scenario heatmap" />
-          <p>The underlying PRM simulation varies 13 continuous dimensions across 11 restriction scenarios. LoadPath makes the same mechanism teachable at classroom scale: a policy is a hypothesis to test, not a universal answer.</p>
+          <p>The underlying PRM simulation varies 13 continuous dimensions across 11 restriction scenarios. PolicyPilot turns that mechanism into a school operations workflow: a policy is a hypothesis to test, not a universal answer.</p>
         </article>
       </section>
 
-      <section class="market-band"><div><p class="eyebrow">WHO IT IS FOR</p><h2>Learning-support teams need a policy lab, not another label.</h2></div><p>Schools can use LoadPath to compare accommodation ideas before applying them to a real student: what happens if a relief channel disappears, what alternative is actually reachable, and which assumptions need evidence?</p></section>
-      <footer class="footer"><span>LoadPath · a research-backed educational simulator</span><span>Local only · no accounts · no student data</span></footer>
+      <section class="market-band"><div><p class="eyebrow">WHO IT IS FOR</p><h2>Learning-support teams need a policy lab, not another label.</h2></div><p>Schools can use PolicyPilot to compare accommodation ideas before applying them to a real student. A paid school pilot would provide team workspaces, versioned policy receipts, and an auditable export for student-support meetings.</p></section>
+      <footer class="footer"><span>PolicyPilot · a research-backed school operations tool</span><span>Local prototype · no accounts · no student data</span></footer>
     </main>
     <script src="app.js"></script>
   </body>
