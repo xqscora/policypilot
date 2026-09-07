@@ -19,19 +19,19 @@ def main() -> None:
 
     demo_dir = ROOT / "demo"
     screenshots = [
-        demo_dir / "loadpath_start.png",
-        demo_dir / "loadpath_gaming_removed.png",
-        demo_dir / "loadpath_counterfactual.png",
+        demo_dir / "policypilot_start.png",
+        demo_dir / "policypilot_gaming_removed.png",
+        demo_dir / "policypilot_counterfactual.png",
     ]
     missing_screenshots = [str(path.relative_to(ROOT)) for path in screenshots if not path.exists()]
     if missing_screenshots:
         raise SystemExit(f"missing demo screenshots: {', '.join(missing_screenshots)}")
 
-    video = demo_dir / "loadpath_demo_2026-09-06.webm"
+    video = demo_dir / "next_founders_policypilot_5min.webm"
     if not video.exists() or video.stat().st_size < 1000:
         raise SystemExit("missing or empty demo video")
 
-    scenario = json.loads((demo_dir / "loadpath-scenario.json").read_text(encoding="utf-8"))
+    scenario = json.loads((demo_dir / "policypilot-scenario.json").read_text(encoding="utf-8"))
     if scenario.get("external_data") is not False:
         raise SystemExit("scenario export must declare external_data=false")
 

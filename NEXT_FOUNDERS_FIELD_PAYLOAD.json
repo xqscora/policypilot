@@ -1,0 +1,24 @@
+{
+  "project_name": "PolicyPilot",
+  "tagline": "Test a learning policy before it reaches a real student.",
+  "elevator_pitch": "PolicyPilot is a browser-local decision-support tool for school learning-support teams. It lets a team compare synthetic learner profiles under the same policy before rollout, then export the assumptions for human review.",
+  "project_story_file": "NEXT_FOUNDERS_SUBMISSION.md",
+  "built_with": [
+    "HTML5 Canvas",
+    "vanilla JavaScript",
+    "CSS3",
+    "local JSON export",
+    "Pressure-Relief Model (PRM)"
+  ],
+  "repository_url": "https://github.com/xqscora/policypilot",
+  "demo_url": "https://xqscora.github.io/policypilot/?demo=1",
+  "video_local_path": "demo/next_founders_policypilot_5min.webm",
+  "video_title": "PolicyPilot | Test a school policy before it reaches a learner",
+  "video_description_file": "NEXT_FOUNDERS_VIDEO_UPLOAD_CARD.md",
+  "video_visibility_target": "unlisted",
+  "video_url": null,
+  "video_status": "local video generated and verified; YouTube upload is not performed",
+  "ai_use_disclosure": "AI coding assistance was used for implementation drafting and debugging. The project owner reviewed the code, model assumptions, claims, and limitations and remains responsible for the submission.",
+  "business_model_file": "NEXT_FOUNDERS_SUBMISSION.md",
+  "external_status": "Registered solo. Local founder pack and five-minute video are ready. No Devpost project draft, upload, or submission is confirmed."
+}

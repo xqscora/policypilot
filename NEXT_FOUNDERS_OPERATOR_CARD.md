@@ -16,7 +16,7 @@
 - **Source:** https://github.com/xqscora/policypilot (create after the local smoke check and public deployment)
 - **Demo:** https://xqscora.github.io/policypilot/?demo=1 (pending public deployment)
 - **Existing local implementation:** `index.html`, `app.js`, `styles.css`
-- **Existing local walkthrough:** `demo/loadpath_demo_2026-09-06.webm` (7.40 seconds; suitable as a short proof clip, not yet the required five-minute founder video)
+- **Local walkthrough:** `demo/next_founders_policypilot_5min.webm` (5:07.68; locally generated with English narration and the required problem/build/demo/scalability sections)
 - **Submission copy and five-minute script:** `NEXT_FOUNDERS_SUBMISSION.md`
 
 ## External action boundary

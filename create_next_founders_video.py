@@ -12,9 +12,9 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).parent
 DEMO = ROOT / "demo"
-SILENT = DEMO / "next_founders_loadpath_silent.webm"
+SILENT = DEMO / "next_founders_policypilot_silent.webm"
 AUDIO = DEMO / "next_founders_narration.wav"
-FINAL = DEMO / "next_founders_loadpath_5min.webm"
+FINAL = DEMO / "next_founders_policypilot_5min.webm"
 
 
 def record() -> Path:
